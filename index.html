@@ -694,6 +694,95 @@
     </a>
   </div>
 
+  <!-- Sales Notification -->
+  <div id="salesNotification" class="fixed bottom-6 left-6 z-50 bg-white rounded-lg shadow-xl border-l-4 border-green-500 p-4 transform translate-x-[-120%] transition-transform duration-500 max-w-xs">
+    <div class="flex items-center">
+      <div class="flex-shrink-0">
+        <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+        </div>
+      </div>
+      <div class="ml-3 flex-1">
+        <p class="text-sm font-medium text-gray-900" id="buyerName">Maria Silva</p>
+        <p class="text-xs text-gray-500" id="saleDetails">Comprou o Kit Completo há 3 min - São Paulo, SP</p>
+      </div>
+      <button onclick="closeSalesNotification()" class="flex-shrink-0 ml-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 hover:text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // Sales Notification System
+    const femaleNames = [
+      'Ana Paula', 'Maria Silva', 'Carla Santos', 'Juliana Costa', 'Fernanda Lima',
+      'Patricia Oliveira', 'Roberta Souza', 'Claudia Pereira', 'Vanessa Alves', 'Luciana Martins',
+      'Simone Rodrigues', 'Monica Ferreira', 'Daniela Nascimento', 'Renata Cardoso', 'Cristina Barbosa',
+      'Adriana Ribeiro', 'Marcia Torres', 'Beatriz Gomes', 'Camila Dias', 'Priscila Moreira'
+    ];
+
+    const brazilianCities = [
+      'São Paulo, SP', 'Rio de Janeiro, RJ', 'Brasília, DF', 'Salvador, BA', 'Fortaleza, CE',
+      'Belo Horizonte, MG', 'Manaus, AM', 'Curitiba, PR', 'Recife, PE', 'Goiânia, GO',
+      'Belém, PA', 'Porto Alegre, RS', 'Guarulhos, SP', 'Campinas, SP', 'São Luís, MA',
+      'São Gonçalo, RJ', 'Maceió, AL', 'Duque de Caxias, RJ', 'Natal, RN', 'Osasco, SP'
+    ];
+
+    const packages = [
+      'Kit Básico', 'Kit Completo', 'Kit Completo', 'Kit Completo' // Kit Completo aparece mais
+    ];
+
+    const timeOptions = ['2 min', '3 min', '5 min', '7 min', '12 min', '15 min', '18 min'];
+
+    function getRandomItem(array) {
+      return array[Math.floor(Math.random() * array.length)];
+    }
+
+    function showSalesNotification() {
+      const notification = document.getElementById('salesNotification');
+      const buyerName = document.getElementById('buyerName');
+      const saleDetails = document.getElementById('saleDetails');
+
+      // Generate random data
+      const name = getRandomItem(femaleNames);
+      const city = getRandomItem(brazilianCities);
+      const package = getRandomItem(packages);
+      const time = getRandomItem(timeOptions);
+
+      // Update content
+      buyerName.textContent = name;
+      saleDetails.textContent = `Comprou o ${package} há ${time} - ${city}`;
+
+      // Show notification
+      notification.classList.remove('translate-x-[-120%]');
+      notification.classList.add('translate-x-0');
+
+      // Hide after 5 seconds
+      setTimeout(() => {
+        notification.classList.remove('translate-x-0');
+        notification.classList.add('translate-x-[-120%]');
+      }, 5000);
+    }
+
+    function closeSalesNotification() {
+      const notification = document.getElementById('salesNotification');
+      notification.classList.remove('translate-x-0');
+      notification.classList.add('translate-x-[-120%]');
+    }
+
+    // Show first notification after 10 seconds, then every 15-25 seconds
+    setTimeout(() => {
+      showSalesNotification();
+      setInterval(() => {
+        showSalesNotification();
+      }, Math.random() * 10000 + 15000); // 15-25 seconds
+    }, 10000);
+  </script>
+
   <script>
     // Countdown Timer
     function startTimer(duration, display) {
