@@ -514,7 +514,7 @@
         </div>
 
         <!-- Premium Option -->
-        <div class="bg-white rounded-lg shadow-xl overflow-hidden border-2 border-accent transform md:-translate-y-4">
+        <div class="bg-white rounded-lg shadow-xl overflow-hidden border-2 border-accent transform md:-translate-y-4 relative">
           <div class="bg-accent text-white py-4 px-6 flex justify-between items-center">
             <div>
               <h3 class="text-xl font-bold">Kit Completo</h3>
@@ -523,9 +523,22 @@
             <span class="bg-white text-accent text-xs font-bold px-2 py-1 rounded-full">MAIS VENDIDO</span>
           </div>
           <div class="p-6">
-            <div class="mb-6">
-              <p class="text-4xl font-bold text-primary mb-2">R$29,99</p>
-              <p class="text-sm text-gray-600">ou 2x de R$16,77</p>
+            <div class="mb-6 flex items-center">
+              <div class="flex-1">
+                <p class="text-4xl font-bold text-primary mb-2">R$29,99</p>
+                <p class="text-sm text-gray-600">ou 2x de R$16,77</p>
+              </div>
+              <div class="ml-4 relative">
+                <!-- Balão de fala -->
+                <div class="absolute -top-8 -left-16 rounded-lg px-3 py-1 shadow-lg z-10" style="background-color: #2e5bbb;">
+                  <p class="text-xs font-bold text-white whitespace-nowrap">O mais completo</p>
+                  <!-- Pontinha do balão -->
+                  <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full">
+                    <div class="w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent" style="border-top-color: #2e5bbb;"></div>
+                  </div>
+                </div>
+                <img src="assets/stitch.png" alt="Stitch" class="w-16 h-16 floating">
+              </div>
             </div>
             <ul class="space-y-3 mb-8">
               <li class="flex items-start">
