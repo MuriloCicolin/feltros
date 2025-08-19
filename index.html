@@ -260,86 +260,122 @@
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-12">Depoimentos de quem já comprou</h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-light p-6 rounded-lg shadow-sm">
-          <div class="flex items-center mb-4">
-            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Ana Claudia" class="w-12 h-12 rounded-full mr-4">
-            <div>
-              <h4 class="font-bold">Ana Claudia</h4>
-              <div class="flex text-yellow-400">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
+      <!-- Desktop: Grid com todas as fotos -->
+      <div class="hidden lg:block">
+        <div class="grid grid-cols-4 gap-6">
+          <div class="bg-light rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/dep1.jpeg" alt="Depoimento de cliente satisfeita" class="w-full h-auto object-contain">
+          </div>
+          <div class="bg-light rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/dep2.jpeg" alt="Depoimento de cliente satisfeita" class="w-full h-auto object-contain">
+          </div>
+          <div class="bg-light rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/dep3.jpeg" alt="Depoimento de cliente satisfeita" class="w-full h-auto object-contain">
+          </div>
+          <div class="bg-light rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/dep4.jpeg" alt="Depoimento de cliente satisfeita" class="w-full h-auto object-contain">
+          </div>
+          <div class="bg-light rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/dep1.jpeg" alt="Depoimento de cliente satisfeita" class="w-full h-auto object-contain">
+          </div>
+          <div class="bg-light rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/dep6.jpeg" alt="Depoimento de cliente satisfeita" class="w-full h-auto object-contain">
+          </div>
+          <div class="bg-light rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/dep7.jpeg" alt="Depoimento de cliente satisfeita" class="w-full h-auto object-contain">
+          </div>
+          <div class="bg-light rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/dep1.jpeg" alt="Depoimento de cliente satisfeita" class="w-full h-auto object-contain">
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile/Tablet: Carrossel -->
+      <div class="lg:hidden relative overflow-hidden">
+        <div id="testimonials-carousel" class="flex transition-transform duration-300 ease-in-out">
+          <!-- Slide 1 -->
+          <div class="flex-none w-full">
+            <div class="grid grid-cols-1 gap-6 max-w-sm mx-auto">
+              <div class="bg-light rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/dep1.jpeg" alt="Depoimento de cliente satisfeita" class="w-full h-auto object-contain">
               </div>
             </div>
           </div>
-          <p>"Comprei os moldes há 3 semanas e já vendi mais de R$1.200 em peças! Nunca imaginei que poderia ganhar dinheiro fazendo algo que amo tanto."</p>
+
+          <!-- Slide 2 -->
+          <div class="flex-none w-full">
+            <div class="grid grid-cols-1 gap-6 max-w-sm mx-auto">
+              <div class="bg-light rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/dep2.jpeg" alt="Depoimento de cliente satisfeita" class="w-full h-auto object-contain">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="flex-none w-full">
+            <div class="grid grid-cols-1 gap-6 max-w-sm mx-auto">
+              <div class="bg-light rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/dep3.jpeg" alt="Depoimento de cliente satisfeita" class="w-full h-auto object-contain">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="flex-none w-full">
+            <div class="grid grid-cols-1 gap-6 max-w-sm mx-auto">
+              <div class="bg-light rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/dep4.jpeg" alt="Depoimento de cliente satisfeita" class="w-full h-auto object-contain">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="flex-none w-full">
+            <div class="grid grid-cols-1 gap-6 max-w-sm mx-auto">
+
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="flex-none w-full">
+            <div class="grid grid-cols-1 gap-6 max-w-sm mx-auto">
+              <div class="bg-light rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/dep6.jpeg" alt="Depoimento de cliente satisfeita" class="w-full h-auto object-contain">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="flex-none w-full">
+            <div class="grid grid-cols-1 gap-6 max-w-sm mx-auto">
+              <div class="bg-light rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/dep7.jpeg" alt="Depoimento de cliente satisfeita" class="w-full h-auto object-contain">
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="bg-light p-6 rounded-lg shadow-sm">
-          <div class="flex items-center mb-4">
-            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Juliana Santos" class="w-12 h-12 rounded-full mr-4">
-            <div>
-              <h4 class="font-bold">Juliana Santos</h4>
-              <div class="flex text-yellow-400">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <p>"O curso que vem com os moldes foi essencial para eu aprender técnicas que fazem minhas peças terem um acabamento profissional. Vale cada centavo!"</p>
-        </div>
+        <!-- Controles do carrossel -->
+        <button id="prev-testimonial" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-primary-dark transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button id="next-testimonial" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-primary-dark transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
 
-        <div class="bg-light p-6 rounded-lg shadow-sm">
-          <div class="flex items-center mb-4">
-            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Marcia Oliveira" class="w-12 h-12 rounded-full mr-4">
-            <div>
-              <h4 class="font-bold">Marcia Oliveira</h4>
-              <div class="flex text-yellow-400">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <p>"Como mãe que precisa ficar em casa, essa oportunidade mudou minha vida. Consigo ajudar nas contas da família fazendo algo prazeroso no meu tempo livre."</p>
+        <!-- Indicadores -->
+        <div class="flex justify-center mt-6 space-x-2">
+          <button class="testimonial-dot w-3 h-3 rounded-full bg-primary transition-colors" data-slide="0"></button>
+          <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 transition-colors" data-slide="1"></button>
+          <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 transition-colors" data-slide="2"></button>
+          <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 transition-colors" data-slide="3"></button>
+          <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 transition-colors" data-slide="4"></button>
+          <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 transition-colors" data-slide="5"></button>
+          <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 transition-colors" data-slide="6"></button>
         </div>
       </div>
     </div>
@@ -814,6 +850,59 @@
         }
       });
     });
+
+    // Testimonials Carousel
+    let currentTestimonialSlide = 0;
+    const testimonialSlides = document.querySelectorAll('#testimonials-carousel > div');
+    const testimonialDots = document.querySelectorAll('.testimonial-dot');
+    const prevTestimonialBtn = document.getElementById('prev-testimonial');
+    const nextTestimonialBtn = document.getElementById('next-testimonial');
+
+    function showTestimonialSlide(index) {
+      const carousel = document.getElementById('testimonials-carousel');
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+
+      // Update dots
+      testimonialDots.forEach((dot, i) => {
+        if (i === index) {
+          dot.classList.remove('bg-gray-300');
+          dot.classList.add('bg-primary');
+        } else {
+          dot.classList.remove('bg-primary');
+          dot.classList.add('bg-gray-300');
+        }
+      });
+    }
+
+    function nextTestimonialSlide() {
+      currentTestimonialSlide = (currentTestimonialSlide + 1) % testimonialSlides.length;
+      showTestimonialSlide(currentTestimonialSlide);
+    }
+
+    function prevTestimonialSlide() {
+      currentTestimonialSlide = (currentTestimonialSlide - 1 + testimonialSlides.length) % testimonialSlides.length;
+      showTestimonialSlide(currentTestimonialSlide);
+    }
+
+    // Event listeners
+    if (nextTestimonialBtn) {
+      nextTestimonialBtn.addEventListener('click', nextTestimonialSlide);
+    }
+
+    if (prevTestimonialBtn) {
+      prevTestimonialBtn.addEventListener('click', prevTestimonialSlide);
+    }
+
+    // Dot navigation
+    testimonialDots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentTestimonialSlide = index;
+        showTestimonialSlide(currentTestimonialSlide);
+      });
+    });
+
+    // Auto-advance testimonials every 5 seconds
+    setInterval(nextTestimonialSlide, 5000);
   </script>
 </body>
 
